@@ -1,1 +1,9 @@
 msg: Welcome to Ashok IT
+spring:
+  datasource:
+    username: root
+    password: Password1
+    url: jdbc:mysql://localhost:3306/sbms?serverTimezone=UTC
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: update
