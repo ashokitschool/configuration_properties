@@ -1,11 +1,16 @@
 spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
   datasource:
-    url: jdbc:mysql://localhost:3306/ashokit_ecomm
     username: root
     password: ashokit@123
-  jpa:
-    hibernate:
-      ddl-auto: update      
-    show-sql: true    
-server:
-  port: 8081
+    url: jdbc:mysql://localhost:3306/ashokit_ecomm
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        
