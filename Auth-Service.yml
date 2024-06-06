@@ -21,3 +21,11 @@ management:
 
 server:
  port: 8081
+
+# Application messages goes here
+auth-service:
+ messages: 
+  userReg: User Created
+  userRegErr: User Creation Failed
+  login: Login Success
+  loginErr: Invalid Credentials  
