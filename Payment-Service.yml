@@ -1,0 +1,29 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+  datasource:
+    username: ashokit
+    password: AshokIT@123
+    url: jdbc:mysql://localhost:3306/ashokit_ecomm
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+server:
+ port: 8087
+
+# Application Messages Goes Here
+payment-service:
+  keys:
+    razorPayAPIKey: xxxxxxxxxxxxxxxx
+    razorPaySecretKey: xxxxxxxxxxxxxx
