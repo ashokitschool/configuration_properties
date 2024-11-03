@@ -1,0 +1,35 @@
+server:
+  port: 7073
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ashokit_ecomm
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  data:
+    rest:
+      base-path: /api3
+  boot:
+   admin:
+     client:
+       url: http://localhost:1111/
+  mail:
+   host: smtp.gmail.com
+   port: 587
+   username: 
+   password: 
+   properties:
+     mail:
+      smtp:
+        auth: true
+        starttls:
+        enable: true     
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

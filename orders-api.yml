@@ -1,0 +1,28 @@
+server:
+  port: 7072
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ashokit_ecomm
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  data:
+    rest:
+      base-path: /api2
+  boot:
+   admin:
+     client:
+       url: http://localhost:1111/      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'        
+razorpay:
+  key:
+    id: rzp_test_m6SJuhq4RdNeRR
+    secret: XU8nmz0ouE0xhpz6eT4rd00V        
