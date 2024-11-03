@@ -2,7 +2,7 @@ server:
   port: 7075
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/ecommerce
+    url: jdbc:mysql://localhost:3306/ashokit_ecomm
     username: root
     password: root
   jpa:
