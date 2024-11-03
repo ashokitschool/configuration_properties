@@ -21,6 +21,8 @@ spring:
         uri: lb://admin-api
         predicates: 
           - Path=/api4/**
+        filters:
+        - AppFilter
       - id: notification-api
         uri: lb://notification-api
         predicates: 
