@@ -1,5 +1,5 @@
 server:
-  port: 7072
+  port: 7073
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -19,6 +19,18 @@ management:
     web:
       exposure:
         include: '*'        
+
+mail:
+   host: smtp.gmail.com
+   port: 587
+   username: ashokit.classes@gmail.com
+   password: 
+   properties:
+     mail:
+      smtp:
+        auth: true
+        starttls:
+        enable: true          
 razorpay:
   key:
     id: rzp_test_m6SJuhq4RdNeRR
