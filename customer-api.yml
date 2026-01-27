@@ -1,5 +1,5 @@
 server:
-  port: 7073
+  port: 7072
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -10,9 +10,6 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-  data:
-    rest:
-      base-path: /api3
   boot:
    admin:
      client:
@@ -20,7 +17,7 @@ spring:
   mail:
    host: smtp.gmail.com
    port: 587
-   username: 
+   username: ashokit.classes@gmail.com
    password: 
    properties:
      mail:
