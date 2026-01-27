@@ -1,8 +1,5 @@
-server:
-  port: 7074
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/ashokit_ecomm
     username: root
     password: root
@@ -10,15 +7,18 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-  data:
-    rest:
-      base-path: /api4
+
   boot:
-   admin:
-     client:
-       url: http://localhost:1111/      
+    admin:
+      client:
+        url: http://localhost:1111/   
+server:
+  port: 7074
+  
 management:
   endpoints:
     web:
       exposure:
         include: '*'
+
+images-upload-dir: E:\classes\product-images\
