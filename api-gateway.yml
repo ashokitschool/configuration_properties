@@ -1,2 +1,32 @@
 server:
   port: 3333
+
+spring:
+  cloud:
+    gateway:
+      routes:
+      
+        - id: products-api
+          uri: lb://products-api
+          predicates:
+            - Path=/api/products/**
+
+        - id: customer-api
+          uri: lb://customer-api
+          predicates:
+            - Path=/api/customer/**
+
+        - id: orders-api
+          uri: lb://orders-api
+          predicates:
+            - Path=/api/order/**
+
+        - id: notifications-api
+          uri: lb://notifications-api
+          predicates:
+            - Path=/api/notifications/**
+
+        - id: admin-api
+          uri: lb://admin-api
+          predicates:
+            - Path=/api/admin/**
