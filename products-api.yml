@@ -5,29 +5,32 @@ server:
 spring:
   application:
     name: products-api
+
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://database-1.cjmqwwo0a08x.ap-south-1.rds.amazonaws.com:3306/ashokit_ecomm
     username: admin
     password: Admin321
+
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+
   boot:
     admin:
       client:
         url: http://admin-server:1111/
-  config:
-    import: optional:configserver:http://config-server:2222
 
 management:
   endpoints:
     web:
       exposure:
-        include: '*'
+        include: "*"
 
 eureka:
+  instance:
+    prefer-ip-address: true
   client:
     service-url:
       defaultZone: http://service-discovery:8761/eureka
