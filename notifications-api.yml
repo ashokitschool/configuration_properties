@@ -43,6 +43,8 @@ aws:
   region: ''
   bucketName: ''
 wati:
+  api:
+    url: 
   notification:
     template:
       name: delivery_notification
