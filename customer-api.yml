@@ -17,7 +17,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://admin-server:1111/
+        url: http://localhost:1111/
 
   mail:
     host: smtp.gmail.com
@@ -42,6 +42,6 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://service-discovery:8761/eureka
+      defaultZone: http://localhost:8761/eureka
     register-with-eureka: true
     fetch-registry: true
