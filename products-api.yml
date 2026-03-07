@@ -8,7 +8,7 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://database-1.cjmqwwo0a08x.ap-south-1.rds.amazonaws.com:3306/ashokit_ecomm
+    url: jdbc:mysql://localhost:3306/ashokit_ecomm
     username: admin
     password: Admin321
 
