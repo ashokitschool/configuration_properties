@@ -12,9 +12,6 @@ spring:
     admin:
       client:
         url: http://localhost:1111/   
-server:
-  port: 7071
-  
 management:
   endpoints:
     web:
