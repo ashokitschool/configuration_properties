@@ -11,10 +11,7 @@ spring:
     show-sql: true
     properties:
       hibernate:
-        format_sql: true
-  data:
-    rest:
-      base-path: /api5        
+        format_sql: true    
   mail:
     host: smtp.gmail.com
     port: 587
