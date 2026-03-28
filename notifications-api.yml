@@ -27,33 +27,12 @@ spring:
           starttls:
             enable: true
             required: true
-pdfDir: invoices/
-reportFileName: invoice
-reportFileNameDateFormat: dd_MMMM_yyyy
-localDateFormat: '"dd MMMM yyyy HH:mm:ss"'
-logoImgPath: logo.png
-logoImgScale: 50,50
-currencySymbol: $
-table_noOfColumns: 4
-table:
-  columnNames: Item Name,Quantity,Unit Price,Net Price
-aws:
-  accessKey: ''
-  secret: ''
-  region: ''
-  bucketName: ''
-wati:
+doubletick:
   api:
-    url: 
-  notification:
-    template:
-      name: delivery_notification
-  payment:
-    reminder:
-      template:
-        name: payment_reminders
-  send:
-    template:
-      msg:
-        url: ''
-  token: ''
+    key: key_uxchFwg4ziTdl7I9EcCFLeadAUqenGlJuecOiMXHCCp3FP7f96bR8akDrab5bUhzQGjdSzOLcLNO4ZsdoWad9Z4qCTA9eiWTmyZRxdT6hzsadcxVq0OKtMnys3hquGwnK7AC6A15XafrHYb5hzRHwRX4srSBQADGntxAQPL5BOggKReTwozHdVf4TAYZyDRR2C4F
+    url: https://public.doubletick.io/whatsapp/message/template
+kafka:
+  topic:
+    name: ashokit-orders
+  bootstrap:
+    url: localhost:9092
