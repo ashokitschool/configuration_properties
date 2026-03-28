@@ -11,10 +11,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:1111/   
-server:
-  port: 7074
-  
+        url: http://localhost:1111/  
 management:
   endpoints:
     web:
