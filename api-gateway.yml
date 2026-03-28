@@ -12,9 +12,9 @@ spring:
             - Path=/api/products/**
 
         - id: customer-api
-          uri: lb://customer-api
+          uri: lb://user-api
           predicates:
-            - Path=/api/customer/**
+            - Path=/api/user/**
 
         - id: orders-api
           uri: lb://orders-api
