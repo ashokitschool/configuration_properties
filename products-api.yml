@@ -26,3 +26,6 @@ management:
     web:
       exposure:
         include: "*"
+app:
+  images:
+     upload-dir: E:\classes\product-images\        
