@@ -26,7 +26,7 @@ spring:
             required: true
 doubletick:
   api:
-    key: key_uxchFwg4ziTdl7I9EcCFLeadAUqenGlJuecOiMXHCCp3FP7f96bR8akDrab5bUhzQGjdSzOLcLNO4ZsdoWad9Z4qCTA9eiWTmyZRxdT6hzsadcxVq0OKtMnys3hquGwnK7AC6A15XafrHYb5hzRHwRX4srSBQADGntxAQPL5BOggKReTwozHdVf4TAYZyDRR2C4F
+    key: key_uxchFwg4ziTdl7I9EcCFLeadAUqenGlJuedoWad9Z4qCTA9eiWTmyZRq0OKtMnys3hquGwnK7AC6A15XafrHYb5hzRHwRX4srSBQADGntxAQPL5BOggKReTwozHdVf4TAYZyDRR2C4F
     url: https://public.doubletick.io/whatsapp/message/template
 kafka:
   topic:
