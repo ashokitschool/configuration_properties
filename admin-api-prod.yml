@@ -18,4 +18,6 @@ management:
       exposure:
         include: '*'
 
-images-upload-dir: E:\classes\product-images\
+app:
+  images:
+     upload-dir: E:\classes\product-images\
