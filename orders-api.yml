@@ -20,7 +20,7 @@ management:
       exposure:
         include: '*'        
 
-mail:
+ mail:
    host: smtp.gmail.com
    port: 587
    username: ashokit.classes@gmail.com
