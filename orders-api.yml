@@ -38,5 +38,5 @@ management:
 
 razorpay:
   key:
-    id: rzp_test_SZ3ay6JVXBUqqm
-    secret: NEJVFcCZ5EnTLdx11qERPPXm
+    id: rzp_test_SZBUqqm
+    secret: NEJVFcCZ5En1qERPPXm
