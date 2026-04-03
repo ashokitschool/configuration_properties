@@ -16,7 +16,7 @@ spring:
     host: smtp.gmail.com
     port: 587
     username: ashokit.classes@gmail.com
-    password: jdua rxfs btqb gmky
+    password: sddf kmog gyjd jtsb
     properties:
       mail:
         smtp:
