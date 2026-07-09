@@ -2,31 +2,44 @@ server:
   port: 3333
 
 spring:
+  application:
+    name: api-gateway
+
   cloud:
     gateway:
-      routes:
-      
-        - id: products-api
-          uri: lb://products-api
-          predicates:
-            - Path=/api/products/**
+      server:
+        webflux:
+          routes:
 
-        - id: user-api
-          uri: lb://user-api
-          predicates:
-            - Path=/api/user/**
+            - id: products-api
+              uri: lb://products-api
+              predicates:
+                - Path=/api/products/**
 
-        - id: orders-api
-          uri: lb://orders-api
-          predicates:
-            - Path=/api/order/**
+            - id: user-api
+              uri: lb://user-api
+              predicates:
+                - Path=/api/user/**
 
-        - id: notifications-api
-          uri: lb://notifications-api
-          predicates:
-            - Path=/api/notifications/**
+            - id: orders-api
+              uri: lb://orders-api
+              predicates:
+                - Path=/api/order/**
 
-        - id: admin-api
-          uri: lb://admin-api
-          predicates:
-            - Path=/api/admin/**
+            - id: notifications-api
+              uri: lb://notifications-api
+              predicates:
+                - Path=/api/notifications/**
+
+            - id: admin-api
+              uri: lb://admin-api
+              predicates:
+                - Path=/api/admin/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+  instance:
+    prefer-ip-address: true
