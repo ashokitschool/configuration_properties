@@ -16,7 +16,7 @@ spring:
     host: smtp.gmail.com
     port: 587
     username: ashokit.classes@gmail.com
-    password: sddf kmog gyjd jtsb
+    password: lrbx nxoh fxqe tfhi
     properties:
       mail:
         smtp:
@@ -24,10 +24,6 @@ spring:
           starttls:
             enable: true
             required: true
-doubletick:
-  api:
-    key: key_uxchFwg4ziTdl7I9EcCFLeadAUqenGlJuedoWad9Z4qCTA9eiWTmyZRq0OKtMnys3hquGwnK7AC6A15XafrHYb5hzRHwRX4srSBQADGntxAQPL5BOggKReTwozHdVf4TAYZyDRR2C4F
-    url: https://public.doubletick.io/whatsapp/message/template
 kafka:
   topic:
     name: ashokit-orders
