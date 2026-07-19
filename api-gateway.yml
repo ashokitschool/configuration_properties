@@ -43,3 +43,8 @@ eureka:
 
   instance:
     prefer-ip-address: true
+
+
+jwt:
+  secret: VGhpc0lzQVNlY3VyZUp3dFNlY3JldEtleUZvckFzaG9rSVRBcHBsaWNhdGlvbjIwMjY=
+  expiration: 86400000    
