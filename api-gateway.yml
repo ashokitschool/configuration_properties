@@ -11,30 +11,42 @@ spring:
         webflux:
           routes:
 
+            # Public route
             - id: products-api
               uri: lb://products-api
               predicates:
                 - Path=/api/products/**
 
+            # Public route
+            # Login and registration APIs are generally available here
             - id: user-api
               uri: lb://user-api
               predicates:
                 - Path=/api/user/**
 
+            # Protected route
             - id: orders-api
               uri: lb://orders-api
               predicates:
                 - Path=/api/order/**
+              filters:
+                - JwtAuthFilter
 
+            # Protected route
             - id: notifications-api
               uri: lb://notifications-api
               predicates:
                 - Path=/api/notifications/**
+              filters:
+                - JwtAuthFilter
 
+            # Protected route
             - id: admin-api
               uri: lb://admin-api
               predicates:
                 - Path=/api/admin/**
+              filters:
+                - JwtAuthFilter
 
 eureka:
   client:
@@ -44,7 +56,6 @@ eureka:
   instance:
     prefer-ip-address: true
 
-
 jwt:
-  secret: VGhpc0lzQVNlY3VyZUp3dFNlY3JldEtleUZvckFzaG9rSVRBcHBsaWNhdGlvbjIwMjY=
-  expiration: 86400000    
+  secret: ${JWT_SECRET:VGhpc0lzQVNlY3VyZUp3dFNlY3JldEtleUZvckFzaG9rSVRBcHBsaWNhdGlvbjIwMjY=}
+  expiration: 86400000
